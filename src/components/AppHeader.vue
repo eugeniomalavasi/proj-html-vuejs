@@ -1,6 +1,23 @@
 <script>
 export default {
-    
+    data() {
+        return {
+            menu: [
+                {
+                title: "Home",
+                routName: "home"
+            },
+                {
+                title: "About Us",
+                routName: "About"
+            },
+                {
+                title: "Contacts",
+                routName: "home"
+            },
+        ]
+        }
+    },
 }
 </script>
 

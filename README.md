@@ -1,8 +1,11 @@
+# PROCEDIMENTO
+1. FARE STRUTTURA HTML
+2. FARE STYLE
+3. FARE ANIMAZIONI
+
 ## components comuni:
 1. bottoni
 2. sezione sponsor (in alto sopra al footer)
-
-
 
 ## considerazioni
 1. mettere header in position fixed 
@@ -12,3 +15,4 @@
 1. gradient background color (verde e nero)
     - main-gradient
     - secondary-gradient
+

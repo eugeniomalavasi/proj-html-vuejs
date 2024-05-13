@@ -1,7 +1,14 @@
-# Vue 3 + Vite
+## components comuni:
+1. bottoni
+2. sezione sponsor (in alto sopra al footer)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## considerazioni
+1. mettere header in position fixed 
+2. dare margin-top di altezza pari all'header
+
+## style comune da mettere nelle variables
+1. gradient background color (verde e nero)
+    - main-gradient
+    - secondary-gradient

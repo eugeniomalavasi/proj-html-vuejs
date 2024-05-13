@@ -20,7 +20,7 @@ routes: [
     },
     {
         path: "/about",
-        name: "About",
+        name: "about",
         component: About,
     },
     {

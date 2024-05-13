@@ -9,11 +9,11 @@ export default {
             },
                 {
                 title: "About Us",
-                routName: "About"
+                routName: "about"
             },
                 {
                 title: "Contacts",
-                routName: "home"
+                routName: "contacts"
             },
         ]
         }
@@ -22,9 +22,12 @@ export default {
 </script>
 
 <template>
-    <div>
-        sono l'header
-    </div>
+<ul v-for="item in menu">
+    <li>
+        <router-link :to="{ name: item.routeName }">{{ item.title }}</router-link>
+    </li>
+</ul>
+
 </template>
 
 <style lang="scss" scoped>

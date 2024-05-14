@@ -10,6 +10,10 @@ export default {
 
 <style lang="scss" scoped>
 button {
-    
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+
 }
 </style>

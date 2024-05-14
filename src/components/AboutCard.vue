@@ -35,7 +35,7 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: rgba(6, 212, 163, 0.8);
+        background-image: $primary-background;
         color: white;
         animation: mymove 1s 1;
         animation-fill-mode: forwards;

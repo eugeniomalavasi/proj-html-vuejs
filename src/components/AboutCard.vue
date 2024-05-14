@@ -44,19 +44,19 @@ export default {
     
             @keyframes mymove {
                 0% {
-
-                    z-index: 0;
                     scale: 0;
                 }
     
                 25% {
-                    z-index: 1;
                     scale: 0.8;
                 }
 
+                35% {
+                    scale: 0.6;
+                }
+
                 100% {
-                    z-index: 1;
-                    scale: 1.02;
+                    scale: 1.03;
                 }
     }
 

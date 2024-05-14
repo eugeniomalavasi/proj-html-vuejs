@@ -4,32 +4,38 @@ export default {
         return {
             menu: [
                 {
-                title: "Home",
-                routName: "home"
-            },
+                    title: "Home",
+                    routeName: "home"
+                },
                 {
-                title: "About Us",
-                routName: "about"
-            },
+                    title: "Contacts",
+                    routeName: "contacts"
+                },
                 {
-                title: "Contacts",
-                routName: "contacts"
-            },
-        ]
+                    title: "About",
+                    routeName: "about"
+                },
+            ]
         }
     },
 }
 </script>
 
 <template>
-<ul v-for="item in menu">
-    <li>
-        <router-link :to="{ name: item.routeName }">{{ item.title }}</router-link>
-    </li>
-</ul>
+    <ul>
+        <li v-for="item in menu">
+            <router-link :to="{ name: item.routeName }" class="nav-link">{{ item.title }}</router-link>
+        </li>
+    </ul>
 
 </template>
 
 <style lang="scss" scoped>
-    
+ul {
+    display: flex;
+    list-style-type: none;
+    .router-link-active {
+        color: blue;
+    }
+}
 </style>

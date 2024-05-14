@@ -37,7 +37,6 @@ export default {
 
         <!-- stylish! section 2 -->
         <div>
-
         </div>
 
         <!-- mission section 3 -->

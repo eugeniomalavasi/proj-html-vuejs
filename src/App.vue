@@ -18,9 +18,13 @@ export default {
 <template>
   <AppHeader />
 
-  <router-view></router-view>
+  <router-view class="main"></router-view>
 
   <AppFooter />
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.main {
+  padding-top: 100px;
+}
+</style>

@@ -46,11 +46,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.circle {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 1px solid black;
-}
+@use"../style/partials/_variables" as*;
 
+.vision-part {
+background-image: $primary-background;
+    .circle {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+}
 </style>

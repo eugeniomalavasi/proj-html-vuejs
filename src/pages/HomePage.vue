@@ -1,11 +1,16 @@
 <script>
 import AppCardHome from '../components/AppCardHome.vue';
 import { store } from '../store';
+import AppButton from '../components/AppButton.vue'
 
 export default {
+    components: {
+        AppCardHome,
+        AppButton,
+    },
 data() {
     return {
-        store
+        store,
     }
 }
 }
@@ -64,20 +69,21 @@ data() {
             <!-- stylish! section 2 -->
             <div class="container" id="stylish">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                         <h1>We Are Here To
                             Make YourWebsite
                             Look MoreElegantAnd Stylish!</h1>
                             <AppButton />
                     </div>
 
-                    <div class="col-6">
-                        <AppCardHome />
+                    <div class="col-7 d-flex flex-wrap">
+                        <div class="col-6 flex-grow-2 flex-wrap p-3" v-for="iconCard in store.cardHomeArray">
+                            <AppCardHome :cardIcon="iconCard"/>
+                        </div>
                     </div>
                 </div>
             </div>
 
-<<<<<<< HEAD
             <!-- mission section 3 -->
             <div>
 

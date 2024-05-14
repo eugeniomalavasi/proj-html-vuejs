@@ -85,8 +85,20 @@ data() {
             </div>
 
             <!-- mission section 3 -->
-            <div>
+            <div class="container pt-3">
+                <div class="row" id="doubleCardSection">
 
+                    <div class="col-6">
+                        <img class="doubleCard1" src="../assets/img/doubleCard1.jpg" alt="">
+                        <img class="doubleCard2" src="../assets/img/doubleCard2.jpg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <h1>learn more about our missions</h1>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
+                            <AppButton />
+                    </div>
+                </div>
             </div>
 
             <!-- other project section 4 -->
@@ -128,5 +140,22 @@ main {
     width: 100%;
     height: 100%;
     background-color: red;
+}
+
+#doubleCardSection {
+    position: relative;
+
+    .doubleCard1 {
+        border-radius: 10px;
+        max-width: 300px;
+    }
+    
+    .doubleCard2 {
+        max-width: 300px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50px;
+        left: 150px;
+    }
 }
 </style>

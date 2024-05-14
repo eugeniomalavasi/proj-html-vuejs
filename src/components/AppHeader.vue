@@ -25,7 +25,9 @@ export default {
 
     <section class="header-menu">
         <!-- LOGO -->
-        <img src="../assets/img/logo.png" alt="business logo">
+        <div class="img-container">
+            <img src="../assets/img/logo.png" alt="business logo">
+        </div>
         <!-- MENU LIST ITEM -->
         <ul>
             <li v-for="item in menu">
@@ -44,8 +46,9 @@ export default {
     width: 100%;
     z-index: 2;
 
-    img {
+    .img-container {
         width: 20%;
+        line-height: 60px;
     }
 
     ul {

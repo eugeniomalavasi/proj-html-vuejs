@@ -67,6 +67,7 @@ export default {
                 </div>
             </div>
 
+<<<<<<< HEAD
             <!-- mission section 3 -->
             <div>
 
@@ -98,6 +99,10 @@ export default {
             </div>
 
             <!-- preFooter section 9 -->
+=======
+        <!-- stylish! section 2 -->
+        <div>
+>>>>>>> 523b76f867f710aa6914021ca68ac55fdf170bbc
         </div>
     </main>
 </template>

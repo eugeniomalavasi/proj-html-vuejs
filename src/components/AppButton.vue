@@ -8,4 +8,8 @@ export default {
     <button>READ MORE</button>
 </template>
 
-<style lang="scss" scope></style>
+<style lang="scss" scoped>
+button {
+    
+}
+</style>

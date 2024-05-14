@@ -52,9 +52,9 @@ export default {
 
     <!-- OUR TEAM PART -->
     <div class="container">
-        <h2 class="text-center">Get to Know our team</h2>
+        <h2 class="text-center">Get to Know <span class="title">our team</span></h2>
         <div class="row">
-            <div class="col-4" v-for="curCard in store.imgAbout">
+            <div class="col-4 p-1" v-for="curCard in store.imgAbout">
                 <AboutCard :cardData="curCard" />
             </div>
         </div>

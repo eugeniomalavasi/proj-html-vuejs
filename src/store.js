@@ -178,4 +178,26 @@ export const store = reactive({
             subTitle: "BRANDING",
         }
     ],
+
+    sponsorArray:[
+        {
+            path:"../src/assets/img/img-footer/client-avantgarde.png"
+        },
+        {
+            path:"../src/assets/img/img-footer/client-bullseye.png"
+        },
+        {
+            path:"../src/assets/img/img-footer/client-chippys.png"
+        },
+        {
+            path:"../src/assets/img/img-footer/client-fastlane.png"
+        },
+        {
+            path:"../src/assets/img/img-footer/client-minghy.png"
+        },
+        {
+            path:"../src/assets/img/img-footer/client-rojones.png"
+        }
+
+    ]
 });

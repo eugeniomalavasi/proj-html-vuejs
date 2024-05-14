@@ -1,5 +1,6 @@
 <script>
 import AppButton from "./AppButton.vue";
+import { store } from '../store';
 
 
 export default {
@@ -7,7 +8,9 @@ export default {
     AppButton,
   },
   data() {
-    return {};
+    return {
+        store,
+    };
   },
 };
 </script>
@@ -52,6 +55,12 @@ export default {
         </div>
       </div>
     </div>
+    <div class="d-flex flex-row mt-5 align-items-center card-sponsor">
+        <div v-for="curimage in store.sponsorArray">
+    <img :src="curimage.path" alt="">
+</div>
+    </div>
+
   </footer>
 </template>
 
@@ -120,6 +129,10 @@ footer {
     border-radius: 15px;
     color: white;
     width: 85%;
+}
+.card-sponsor{
+    min-width: 200px;
+    min-height: 150px;
 }
 
 

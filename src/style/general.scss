@@ -1,7 +1,6 @@
 @import"@fortawesome/fontawesome-free/css/all.min.css";
 @import"bootstrap/scss/bootstrap";
 
-
 *{
     margin: 0 auto;
     padding: 0;
@@ -13,11 +12,10 @@ img {
 }
 
 
-
 ul {
     list-style-type: none;
 }
 
-.title {
-    color: #00d9a6;
+.bg-gradient {
+    background-image: linear-gradient(#f9f9f9, white);
 }

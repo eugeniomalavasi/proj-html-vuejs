@@ -22,7 +22,7 @@ export default {
     <main class="container-fluid">
         <div>
             <!-- hero carousel section 1-->
-            <header>
+            <header class="bg-gradient">
                 <div id="hero-carousel" class="carousel carousel-dark slide mt-4 mb-5">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -34,21 +34,24 @@ export default {
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block carouselImg1"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item " data-bs-interval="2000">
-                            <img src="../assets/img/Bussiness-employer-at-work.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/Bussiness-employer-at-work.jpg" class="d-block carouselImg2"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block carouselImg3"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -69,108 +72,126 @@ export default {
             </header>
 
             <!-- stylish! section 2 -->
-            <div class="container" id="stylish">
-                <div class="row mt-4 mb-5">
-                    <div class="col-5">
-                        <h1>We Are Here To
-                            Make YourWebsite
-                            Look MoreElegantAnd Stylish!</h1>
-                        <AppButton />
-                    </div>
+            <div class="bg-gradient">
+                <div class="container" id="stylish">
+                    <div class="row mt-4 mb-5">
+                        <div class="col-5">
+                            <h1>We Are Here To
+                                Make YourWebsite
+                                Look MoreElegantAnd Stylish!</h1>
+                            <AppButton />
+                        </div>
 
-                    <div class="col-7 d-flex flex-wrap">
-                        <div class="col-6 flex-grow-2 flex-wrap p-3" v-for="iconCard in store.cardHomeArray">
-                            <AppCardHome :cardIcon="iconCard" />
+                        <div class="col-7 d-flex flex-wrap">
+                            <div class="col-6 flex-grow-2 flex-wrap p-3" v-for="iconCard in store.cardHomeArray">
+                                <AppCardHome :cardIcon="iconCard" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- mission section 3 -->
-            <div class="container ">
-                <div class="row mt-4 mb-5" id="doubleCardSection">
+            <div class="bg-gradient">
+                <div class="container ">
+                    <div class="row mt-4 mb-5" id="doubleCardSection">
 
-                    <div class="col-6">
-                        <img class="doubleCard1" src="../assets/img/doubleCard1.jpg" alt="">
-                        <img class="doubleCard2" src="../assets/img/doubleCard2.jpg" alt="">
-                    </div>
+                        <div class="col-6">
+                            <img class="doubleCard1" src="../assets/img/doubleCard1.jpg" alt="">
+                            <img class="doubleCard2" src="../assets/img/doubleCard2.jpg" alt="">
+                        </div>
 
-                    <div class="col-6">
-                        <h1>learn more about our missions</h1>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
-                        <AppButton />
+                        <div class="col-6">
+                            <h1>learn more about our missions</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the
+                                Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
+                            <AppButton />
+                        </div>
                     </div>
                 </div>
             </div>
-
             <!-- other project section 4 -->
-            <div class="container mt-4">
-                <div class="row  mt-4 mb-5">
-                    <div class="col-6">
-                        <h1>Our recentweb designs&
-                            some examples of
-                            pastprojects</h1>
+            <div class="bg-gradient">
+                <div class="container mt-4">
+                    <div class="row  mt-4 mb-5">
+                        <div class="col-6">
+                            <h1>Our recentweb designs&
+                                some examples of
+                                pastprojects</h1>
+                        </div>
+                        <div class="col-6">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the
+                                Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away,
+                                behind
+                                the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove.</p>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away, behind
-                            the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts. Separated they live in Bookmarksgrove.</p>
-                    </div>
-                </div>
-
-                <div class="row d-flex flex-wrap">
-                    <div class="col-3 p-0 flex-wrap" v-for="otherProjectImg in store.cardOtherProject">
-                        <AppOtherProject :cardProject="otherProjectImg" />
+                    <div class="row d-flex flex-wrap">
+                        <div class="col-3 p-0 flex-wrap" v-for="otherProjectImg in store.cardOtherProject">
+                            <AppOtherProject :cardProject="otherProjectImg" />
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- double card section 5 -->
-            <div class="container-fluid">
-                <div class="row mt-4 mb-5" id="doubleCardSection5">
-                    <div
-                        class="col-6 imgText text-center d-flex flex-column justify-content-center align-items-centers gap-2">
-                        <div class="col-12">
-                            <h1>280</h1>
+            <div class="bg-gradient">
+                <div class="container-fluid">
+                    <div class="row mt-4 mb-5" id="doubleCardSection5">
+                        <div
+                            class="col-6 imgText text-center d-flex flex-column justify-content-center align-items-centers gap-2">
+                            <div class="col-12">
+                                <h1>280</h1>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-centers gap-5">
+                                <div class="col-6">
+                                    <h3>+3,500</h3>
+                                    <p>USERS'COMMENTS</p>
+                                </div>
+                                <div class="col-6">
+                                    <h3>+3,500</h3>
+                                    <p>USERS'COMMENTS</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-centers gap-5">
-                            <div class="col-6">
-                                <h3>+3,500</h3>
-                                <p>USERS'COMMENTS</p>
-                            </div>
-                            <div class="col-6">
-                                <h3>+3,500</h3>
-                                <p>USERS'COMMENTS</p>
-                            </div>
+                        <div class="col-6 onlyText">
+                            <h1> We Love What We Do</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the
+                                Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away,
+                                behind
+                                the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove.</p>
+                            <ol>
+                                <li>Far far away, behind the word mountains</li>
+                                <li>Large language ocean</li>
+                                <li>far from the countries Vokalia and Consonantia</li>
+                            </ol>
                         </div>
                     </div>
-
-                    <div class="col-6 onlyText">
-                        <h1> We Love What We Do</h1>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away, behind
-                            the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts. Separated they live in Bookmarksgrove.</p>
-                        <ol>
-                            <li>Far far away, behind the word mountains</li>
-                            <li>Large language ocean</li>
-                            <li>far from the countries Vokalia and Consonantia</li>
-                        </ol>
-                    </div>
-
                 </div>
             </div>
 
             <!-- pack price section 6 -->
-            <div>
+            <div class="bg-gradient">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
 
+                        </div>
+
+                        <div class="col-9">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <!-- overlay citation section 7 -->
             <div>
 
@@ -191,10 +212,14 @@ main {
     padding-top: 100px;
 }
 
-#carouselBody {
-    width: 100%;
-    height: 100%;
-    background-color: red;
+.carousel-inner {
+
+    height: 500px;
+
+    #carousel-item {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 #doubleCardSection {

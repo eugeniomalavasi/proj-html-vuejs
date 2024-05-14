@@ -1,8 +1,13 @@
 <script>
 import AppCardHome from '../components/AppCardHome.vue';
+import { store } from '../store';
 
 export default {
-
+data() {
+    return {
+        store
+    }
+}
 }
 </script>
 

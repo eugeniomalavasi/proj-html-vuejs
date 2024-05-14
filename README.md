@@ -5,7 +5,6 @@
 
 ## components comuni:
 1. bottoni
-2. sezione sponsor (in alto sopra al footer)
 
 ## considerazioni
 1. mettere header in position fixed 

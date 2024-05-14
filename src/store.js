@@ -193,11 +193,11 @@ export const store = reactive({
             path:"../src/assets/img/img-footer/client-fastlane.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-minghy.png"
+            path:"../src/assets/img/img-footer/client-7@2x.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-rojones.png"
-        }
+            path:"../src/assets/img/img-footer/client-minghy.png"
+        },
 
     ]
 });

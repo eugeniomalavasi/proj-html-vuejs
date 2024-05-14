@@ -70,6 +70,11 @@ footer {
 
   .row{
     margin: 10px;
+
+  }
+
+  .card{
+   
   }
 
 .carddx{
@@ -133,6 +138,12 @@ footer {
 .card-sponsor{
     min-width: 200px;
     min-height: 150px;
+    background-color: #f6f6f6;
+    // margin-top: 0;
+    // margin-bottom: -145px;
+    // padding: 260px 0 113px;
+    // position: relative;
+    // top: -145px;
 }
 
 

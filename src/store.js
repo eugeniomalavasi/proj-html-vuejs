@@ -87,30 +87,30 @@ export const store = reactive({
 
     listFooter: [
         {
-            title:"Careers",
-        
+            title: "Careers",
+
         },
         {
-            title:"News",
-        
+            title: "News",
+
         },
         {
-            title:"Terms of use",
-        
+            title: "Terms of use",
+
         },
         {
-            title:"Privacy Projects",
-        
+            title: "Privacy Projects",
+
         },
         {
-            title:"About",
-        
+            title: "About",
+
         },
         {
-            title:"Contact",
-        
+            title: "Contact",
+
         },
-        
+
 
     ],
     cardContact: [
@@ -118,21 +118,64 @@ export const store = reactive({
             name: "ADDRESS",
             text: "123 Ave, Lorem City, site Country, The World",
             icon: "fa-solid fa-location-dot",
-            
+
         },
         {
             name: "PHONE",
             text: "(001) 123456789 - 234567891",
             mail: "info@phloxbusiness.com",
-            icon:"fa-solid fa-mobile-screen",
-            
+            icon: "fa-solid fa-mobile-screen",
+
         },
         {
             name: "WORK HOUSE",
             text: "Monday - Friday       09.00 - 23.00",
             gg: "Sunday         09.00 - 16.00",
-            icon:"fa-regular fa-clock"
-            
+            icon: "fa-regular fa-clock"
+
         },
-    ]
+    ],
+
+    cardOtherProject: [
+        {
+            imgPath: "../components/assets/img/otherProjectHome1",
+            title: "The Basket of Flowers",
+            subTitle: "BRANDING MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome2",
+            title: "A Famous Ferris Wheel",
+            subTitle: "MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome3",
+            title: "Complementary Colors",
+            subTitle: "BRANDING MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome4",
+            title: "Business Prestige",
+            subTitle: "BRANDING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome5",
+            title: "Colorful Origami Boats",
+            subTitle: "BRANDING MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome6",
+            title: "Modern Couch",
+            subTitle: "MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome7",
+            title: "Hot Air Baloon",
+            subTitle: "BRANDING MARKETING",
+        },
+        {
+            imgPath: "../components/assets/img/otherProjectHome8",
+            title: "Make Difference",
+            subTitle: "BRANDING",
+        }
+    ],
 });

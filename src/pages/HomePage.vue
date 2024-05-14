@@ -1,18 +1,20 @@
 <script>
 import AppCardHome from '../components/AppCardHome.vue';
+import AppOtherProject from '../components/AppOtherProject.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
 export default {
     components: {
         AppCardHome,
+        AppOtherProject,
         AppButton,
     },
-data() {
-    return {
-        store,
+    data() {
+        return {
+            store,
+        }
     }
-}
 }
 </script>
 
@@ -21,10 +23,10 @@ data() {
         <div>
             <!-- hero carousel section 1-->
             <header>
-                <div id="hero-carousel" class="carousel carousel-dark slide">
+                <div id="hero-carousel" class="carousel carousel-dark slide mt-4 mb-5">
                     <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
@@ -68,25 +70,25 @@ data() {
 
             <!-- stylish! section 2 -->
             <div class="container" id="stylish">
-                <div class="row">
+                <div class="row mt-4 mb-5">
                     <div class="col-5">
                         <h1>We Are Here To
                             Make YourWebsite
                             Look MoreElegantAnd Stylish!</h1>
-                            <AppButton />
+                        <AppButton />
                     </div>
 
                     <div class="col-7 d-flex flex-wrap">
                         <div class="col-6 flex-grow-2 flex-wrap p-3" v-for="iconCard in store.cardHomeArray">
-                            <AppCardHome :cardIcon="iconCard"/>
+                            <AppCardHome :cardIcon="iconCard" />
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- mission section 3 -->
-            <div class="container pt-3">
-                <div class="row" id="doubleCardSection">
+            <div class="container ">
+                <div class="row mt-4 mb-5" id="doubleCardSection">
 
                     <div class="col-6">
                         <img class="doubleCard1" src="../assets/img/doubleCard1.jpg" alt="">
@@ -95,15 +97,36 @@ data() {
 
                     <div class="col-6">
                         <h1>learn more about our missions</h1>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
-                            <AppButton />
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                            Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
+                        <AppButton />
                     </div>
                 </div>
             </div>
 
             <!-- other project section 4 -->
-            <div>
+            <div class="container mt-4">
+                <div class="row  mt-4 mb-5">
+                    <div class="col-6">
+                        <h1>Our recentweb designs&
+                            some examples of
+                            pastprojects</h1>
+                    </div>
+                    <div class="col-6">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                            Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away, behind
+                            the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                            texts. Separated they live in Bookmarksgrove.</p>
+                    </div>
+                </div>
 
+                <div class="row d-flex flex-wrap">
+                    <div class="col-3 p-0 flex-wrap" v-for="otherProjectImg in store.cardOtherProject">
+                            <AppOtherProject :cardProject="otherProjectImg" />
+                        </div>
+                </div>
             </div>
 
             <!-- double card section 5 -->
@@ -149,7 +172,7 @@ main {
         border-radius: 10px;
         max-width: 300px;
     }
-    
+
     .doubleCard2 {
         max-width: 300px;
         border-radius: 10px;

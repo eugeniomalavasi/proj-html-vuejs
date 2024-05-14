@@ -138,42 +138,42 @@ export const store = reactive({
 
     cardOtherProject: [
         {
-            imgPath: "../components/assets/img/otherProjectHome1",
+            imgPath: "otherProjectHome1",
             title: "The Basket of Flowers",
             subTitle: "BRANDING MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome2",
+            imgPath: "otherProjectHome2",
             title: "A Famous Ferris Wheel",
             subTitle: "MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome3",
+            imgPath: "otherProjectHome3",
             title: "Complementary Colors",
             subTitle: "BRANDING MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome4",
+            imgPath: "otherProjectHome4",
             title: "Business Prestige",
             subTitle: "BRANDING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome5",
+            imgPath: "otherProjectHome5",
             title: "Colorful Origami Boats",
             subTitle: "BRANDING MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome6",
+            imgPath: "otherProjectHome6",
             title: "Modern Couch",
             subTitle: "MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome7",
+            imgPath: "otherProjectHome7",
             title: "Hot Air Baloon",
             subTitle: "BRANDING MARKETING",
         },
         {
-            imgPath: "../components/assets/img/otherProjectHome8",
+            imgPath: "otherProjectHome8",
             title: "Make Difference",
             subTitle: "BRANDING",
         }

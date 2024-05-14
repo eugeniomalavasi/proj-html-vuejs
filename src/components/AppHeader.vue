@@ -41,10 +41,11 @@ export default {
 <style lang="scss" scoped>
 .header-menu {
     display: flex;
-    height: 100px;
+    height: 80px;
     position: fixed;
     width: 100%;
     z-index: 2;
+    background-color: white;
 
     .img-container {
         width: 20%;
@@ -53,8 +54,6 @@ export default {
 
     ul {
         display: flex;
-        list-style-type: none;
-
 
         .router-link-active {
             color: blue;

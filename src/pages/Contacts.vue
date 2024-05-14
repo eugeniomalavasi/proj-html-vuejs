@@ -65,6 +65,7 @@ export default {
   text-align: center;
   background-color: #f9f9f9;
   padding: 20px;
+  padding-top: 100px;
 
   h1 {
     color: #00d9a6;

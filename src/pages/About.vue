@@ -1,9 +1,11 @@
 <script>
 import AppButton from '../components/AppButton.vue'
+import AboutCard from '../components/AboutCard.vue'
 import { store } from '../store';
 export default {
     components: {
-        AppButton
+        AppButton,
+        AboutCard,
     }, data() {
         return {
             store,
@@ -42,6 +44,21 @@ export default {
             </div>
         </div>
 
+        <!-- OUR TEAM PART -->
+        <div class="container">
+        <h2 class="text-center">Get to Know our team</h2>
+            <div class="row">
+                <div class="col-4" v-for="curCard in store.imgAbout">
+                    <AboutCard :cardData="curCard"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT US -->
+        <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">
+            <h2 class="text-center mb-5">PLEASE SEND US YOUR QUESTIONS AND WE WONT ANSWER THEM</h2>
+            <AppButton />
+        </div>
     </section>
 </template>
 
@@ -50,11 +67,22 @@ export default {
 
 .vision-part {
 background-image: $primary-background;
+color: white;
     .circle {
-        height: 150px;
-        width: 150px;
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 1px solid white;
+    }
+}
+
+.ms-contact-us {
+    background-image: url(../assets/img/about-img/contact-us.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    h2 {
+        color: white;
     }
 }
 </style>

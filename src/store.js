@@ -26,37 +26,37 @@ export const store = reactive({
     imgAbout: [
         {
             imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-142@2x-443x424.png",
-            name: "Alessandra Pini",
+            name: "Alessandra Pinili",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },
         {
-            imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-142@2x-443x424.png",
-            name: "Alessandra Pini",
+            imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-143@2x-443x424.png",
+            name: "Gustavo Pini",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },
         {
             imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-150@2x-443x424.png",
-            name: "Alessandra Pini",
+            name: "Franco Pini",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },
         {
             imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-145@2x-443x424.png",
-            name: "Alessandra Pini",
+            name: "Tino Pini",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },
         {
             imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-144@2x-443x424.png",
-            name: "Alessandra Pini",
+            name: "Goffredo Pini",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },
         {
             imgUrl: "https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2018/08/Mask-Group-146@2x-443x424.png",
-            name: "Alessandra Pini",
+            name: "Ubaldo Pini",
             role: "Virtual Documents",
             text: "Mi chiamo Massimo Decimo Meridio, comandante dell'esercito del nord, generale delle legioni Felix, servoleale dell'unico vero imperatore Marco Aurelio"
         },

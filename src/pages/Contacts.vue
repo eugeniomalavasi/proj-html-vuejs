@@ -1,18 +1,27 @@
 <script>
 import AppCardContact from "../components/AppCardContact.vue";
 import AppButton from "../components/AppButton.vue";
+import { store } from '../store';
 
 export default {
   components: {
     AppCardContact,
     AppButton,
   },
+  data() {
+    return {
+      store,
+    }
+  }
 };
 </script>
 
 <template>
   <div class="title-contact">
     <h1>Contact Page</h1>
+  </div>
+  <div class="maps mt-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d463149.1254326645!2d-97.165819!3d32.518685!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sit!2sit!4v1715687217406!5m2!1sit!2sit" width="1500" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <!-- container dard -->
   <div class="container">
@@ -128,6 +137,7 @@ h5 {
 .form-control {
   border: none;
   border-bottom: 1px solid black;
+  border-radius: 0;
 }
 
 .button {

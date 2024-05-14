@@ -1,29 +1,9 @@
 <script>
+import { store } from '../store';
 export default {
     data() {
         return {
-            cardContact: [
-                {
-                    name: "ADDRESS",
-                    text: "123 Ave, Lorem City, site Country, The World",
-                    icon: "fa-solid fa-location-dot",
-                    
-                },
-                {
-                    name: "PHONE",
-                    text: "(001) 123456789 - 234567891",
-                    mail: "info@phloxbusiness.com",
-                    icon:"fa-solid fa-mobile-screen",
-                    
-                },
-                {
-                    name: "WORK HOUSE",
-                    text: "Monday - Friday       09.00 - 23.00",
-                    gg: "Sunday         09.00 - 16.00",
-                    icon:"fa-regular fa-clock"
-                    
-                },
-            ]
+           store,
         }
     }
   
@@ -31,8 +11,8 @@ export default {
 </script>
 
 <template>
-  <div class="row d-flex align-items-stretch mt-5 mr-0">
-  <div class="col-md-4 mb-4 p-5" v-for="index in cardContact" :key="index.id">
+  <div class="row d-flex align-items-stretch mt-5 mr-0 pos">
+  <div class="col-md-4 mb-4 p-5" v-for="index in store.cardContact" :key="index.id">
     <div class="card h-100 d-flex flex-column p-2">
       <div class="card-body flex-grow-1 ">
         <div class="row">
@@ -56,7 +36,11 @@ export default {
 
 <style lang="scss" scoped>
 
-
+.pos{
+position: relative;
+   top: -200px;
+    bottom: 0;
+}
 
     i{
       font-size: 80px;

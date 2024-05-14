@@ -83,5 +83,56 @@ export const store = reactive({
             title: "Online Marketing",
             text: "Far far away, behind the word mountains, far from the countries Vokalia Separated..."
         },
+    ],
+
+    listFooter: [
+        {
+            title:"Careers",
+        
+        },
+        {
+            title:"News",
+        
+        },
+        {
+            title:"Terms of use",
+        
+        },
+        {
+            title:"Privacy Projects",
+        
+        },
+        {
+            title:"About",
+        
+        },
+        {
+            title:"Contact",
+        
+        },
+        
+
+    ],
+    cardContact: [
+        {
+            name: "ADDRESS",
+            text: "123 Ave, Lorem City, site Country, The World",
+            icon: "fa-solid fa-location-dot",
+            
+        },
+        {
+            name: "PHONE",
+            text: "(001) 123456789 - 234567891",
+            mail: "info@phloxbusiness.com",
+            icon:"fa-solid fa-mobile-screen",
+            
+        },
+        {
+            name: "WORK HOUSE",
+            text: "Monday - Friday       09.00 - 23.00",
+            gg: "Sunday         09.00 - 16.00",
+            icon:"fa-regular fa-clock"
+            
+        },
     ]
 });

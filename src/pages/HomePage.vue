@@ -1,6 +1,8 @@
 <script>
 import AppCardHome from '../components/AppCardHome.vue';
 import AppOtherProject from '../components/AppOtherProject.vue';
+import AppPackPrices from '../components/AppPackPrices.vue'
+import AppCardPackPrices from '../components/AppCardPackPrices.vue'
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -9,6 +11,8 @@ export default {
         AppCardHome,
         AppOtherProject,
         AppButton,
+        AppPackPrices,
+        AppCardPackPrices,
     },
     data() {
         return {
@@ -179,19 +183,7 @@ export default {
             </div>
 
             <!-- pack price section 6 -->
-            <div class="bg-gradient">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-3">
-
-                        </div>
-
-                        <div class="col-9">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <AppPackPrices />
             <!-- overlay citation section 7 -->
             <div>
 
@@ -266,6 +258,5 @@ main {
         top: 15%;
         left: 45%;
     }
-
 }
 </style>

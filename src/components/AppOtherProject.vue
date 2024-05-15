@@ -14,10 +14,10 @@ export default {
 </script>
 
 <template>
-    <div class="cardProject">
+    <div class="cardProject ms-card">
         <div class="overImg">
             <img :src="getImageUrl(cardProject.imgPath)" alt="">
-            <div class="overText">
+            <div class="overText back-card">
                 <h1>{{ cardProject.title }}</h1>
                 <p>{{ cardProject.subTitle }}</p>
             </div>
@@ -26,6 +26,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use"../style/partials/_variables" as*;
+
 .cardProject {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
@@ -41,5 +43,43 @@ export default {
         left: 10px;
 
     }
+
+    .ms-card {
+    position: relative;
+
+
+    &:hover .back-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: $primary-background;
+        color: white;
+        animation: mymove 1s forwards;
+        border-radius: 15px;
+    }
+
+    @keyframes mymove {
+        0% {
+            scale: 0;
+        }
+
+        25% {
+            scale: 0.8;
+        }
+
+        100% {
+            scale: 1.03;
+        }
+    }
+
+    .back-card {
+        scale: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
 }
 </style>

@@ -179,25 +179,49 @@ export const store = reactive({
         }
     ],
 
-    sponsorArray:[
+    sponsorArray: [
         {
-            path:"../src/assets/img/img-footer/client-avantgarde.png"
+            path: "../src/assets/img/img-footer/client-avantgarde.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-bullseye.png"
+            path: "../src/assets/img/img-footer/client-bullseye.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-chippys.png"
+            path: "../src/assets/img/img-footer/client-chippys.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-fastlane.png"
+            path: "../src/assets/img/img-footer/client-fastlane.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-7@2x.png"
+            path: "../src/assets/img/img-footer/client-7@2x.png"
         },
         {
-            path:"../src/assets/img/img-footer/client-minghy.png"
+            path: "../src/assets/img/img-footer/client-minghy.png"
         },
 
+    ],
+
+    cardPrices: [
+        {
+            title: "DESIGNING",
+            subTitle: "All Designs",
+            price: "10",
+            isActive: false,
+            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+        },
+        {
+            title: "DESIGNING",
+            subTitle: "All Designs",
+            price: "15",
+            isActive: true,
+            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+        },
+        {
+            title: "DESIGNING",
+            subTitle: "All Designs",
+            price: "10",
+            isActive: false,
+            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+        },
     ]
 });

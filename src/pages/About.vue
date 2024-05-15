@@ -38,7 +38,7 @@ export default {
         <div class="container ms-vision">
             <div>
                 <ul class="d-flex">
-                    <li v-for="curItem in store.visionArray">
+                    <li v-for="curItem in store.visionArray" class="p-4">
                         <div class="circle d-flex justify-content-center align-items-center">
                             <i :class="curItem.icon" class="icon-style"></i>
                         </div>
@@ -88,16 +88,34 @@ export default {
         height: 100%;
         display: flex;
         align-items: center;
-        
-            .circle {
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                border: 3px solid white;
-                .icon-style {
-                    font-size: 3rem;
+
+        li {
+            &:hover {
+                border-radius: 60px;
+                animation: fade-in 1s forwards;
+            }
+
+            @keyframes fade-in {
+                0% {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+                100% {
+                    background-color: rgba(0, 0, 0, 0.3);
                 }
             }
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+
+            .icon-style {
+                font-size: 3rem;
+            }
+        }
     }
 }
 

@@ -19,6 +19,8 @@ export default {
             <h3>{{ cardData.name }}</h3>
             <h6>{{ cardData.role }}</h6>
             <p>{{ cardData.text }}</p>
+        <hr>
+
         </div>
     </div>
 </template>
@@ -51,22 +53,21 @@ export default {
                     scale: 0.8;
                 }
 
-                35% {
-                    scale: 0.6;
-                }
-
                 100% {
                     scale: 1.03;
                 }
     }
 
     .back-card {
-        z-index: 0;
         scale:0;
         position: absolute;
         top: 0;
         height: 100%;
         width: 100%;
+        hr {
+            border: 1px solid white;
+            width: 80%;
+        }
     }
 }
 </style>

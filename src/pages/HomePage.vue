@@ -1,8 +1,9 @@
 <script>
 import AppCardHome from '../components/AppCardHome.vue';
 import AppOtherProject from '../components/AppOtherProject.vue';
-import AppPackPrices from '../components/AppPackPrices.vue'
-import AppCardPackPrices from '../components/AppCardPackPrices.vue'
+import AppPackPrices from '../components/AppPackPrices.vue';
+import AppCitHomepage from '../components/AppCitHomepage.vue';
+import AppCardPackPrices from '../components/AppCardPackPrices.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -13,6 +14,7 @@ export default {
         AppButton,
         AppPackPrices,
         AppCardPackPrices,
+        AppCitHomepage,
     },
     data() {
         return {
@@ -186,7 +188,7 @@ export default {
             <AppPackPrices />
             <!-- overlay citation section 7 -->
             <div>
-
+            <AppCitHomepage />
             </div>
 
             <!-- latast news & and out blog section 8 -->

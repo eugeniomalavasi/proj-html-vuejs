@@ -35,4 +35,11 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bg-gradient {
+
+margin-top: 150px;
+margin-bottom: 150px;
+
+}
+</style>

@@ -1,9 +1,11 @@
 <script>
 import AppButton from '../components/AppButton.vue'
+import AppButtonGreen from '../components/AppButtonGreen.vue'
 
 export default {
     components: {
-        AppButton
+        AppButton,
+        AppButtonGreen
     },
 
     data() {
@@ -22,14 +24,15 @@ export default {
     <div class="back-col"></div>
     <section class="container">
         <div class="two-column d-flex align-item-center">
-            <div class="left-content d-flex flex-column align-items-center justify-content-center me-3">
+            <div class="left-content d-flex flex-column align-items-center justify-content-center me-5">
                 <h1>We are a creative <span class="title-color">web design agency</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatibus amet officiis non
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatibus amet officiis non
                     ipsum
                     laborum, porro quisquam, eaque cupiditate perferendis exercitationem magnam distinctio eum?
                     Quam,
                     maxime asperiores? Odio, provident voluptates.</p>
-                <AppButton />
+                <AppButtonGreen class="mt-5"/>
+
             </div>
             <img src="../assets/img/about-img/woman-hero.jpg" alt="agency woman">
         </div>
@@ -51,9 +54,11 @@ export default {
         font-weight: 600;
     }
 }
+
 .two-column img {
     margin-top: 5rem;
 }
+
 .back-col {
     background-image: $third-background;
     height: 100%;
@@ -61,5 +66,4 @@ export default {
     position: absolute;
     z-index: -1;
 }
-
 </style>

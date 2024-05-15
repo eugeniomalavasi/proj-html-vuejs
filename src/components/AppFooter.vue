@@ -18,6 +18,7 @@ export default {
   <footer>
     <!-- card footer centrali -->
     <div>
+    <div class="conteiner-fluid">
       <div class="row">
         <div class="col-sm-6 mb-3 mb-sm-0">
           <div class="card carddx text-center d-flex align-items-center justify-content-center">
@@ -53,6 +54,7 @@ export default {
         <img :src="curimage.path" alt="" />
       </div>
     </div>
+  </div>
     <!-- fine sponsor -->
     <div class="container-fluid p-5">
       <div class="row-4 d-flex">
@@ -67,7 +69,7 @@ export default {
         <div class="col">
           <h4>QUIK LINKS</h4>
           <ul class="p-0 mt-3">
-            <li v-for="cur in store.listFooter"><a href="" class="list">{{ cur.title }}</a></li>
+            <li v-for="cur in store.listFooter"><router-link :to ="{name:cur.routeName}" class="nav-link">{{ cur.title }}</router-link> </li> 
           </ul>
         </div>
         <div class="col">
@@ -109,6 +111,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use"../style/partials/_variables" as*;
+
 footer {
   padding-top: 200px;
 
@@ -168,7 +172,7 @@ footer {
 }
 
 .cardsx {
-  background-color: #9be15d;
+  background-image: $primary-background;
   border-radius: 15px;
   color: white;
   width: 85%;
@@ -179,11 +183,8 @@ footer {
   min-width: 200px;
   min-height: 150px;
   background-color: #f6f6f6;
-  // margin-top: 0;
-  // margin-bottom: -145px;
   padding: 240px 0 113px;
-  // position: relative;
-  // top: -145px;
+ 
 }
 
 .card-body {
@@ -214,6 +215,7 @@ footer {
 .icon{
   margin: 0 40px;
   li{
+    text-decoration: none;
     a{
       color: #707070f2;
     }

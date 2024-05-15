@@ -35,6 +35,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use"../style/partials/_variables" as*;
+
 .pos {
   position: relative;
   top: -100px;
@@ -47,7 +49,7 @@ export default {
 
 i {
   font-size: 7rem;
-  color: #00d9a6;
+  color: $title-color;
 }
 h5{
   font-size: 2rem;

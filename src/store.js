@@ -88,28 +88,29 @@ export const store = reactive({
     listFooter: [
         {
             title: "Careers",
-
+            routeName:"notfound"
         },
         {
             title: "News",
-
+            routeName:"notfound"
         },
         {
             title: "Terms of use",
-
+            routeName:"notfound"
         },
         {
             title: "Privacy Projects",
-
+            routeName:"notfound"
         },
-        {
-            title: "About",
+         {
+             title: "About",
+             routeName:"about"
+         },
+         {
+             title: "Contact",
+             routeName:"contacts"
 
-        },
-        {
-            title: "Contact",
-
-        },
+         },
 
 
     ],

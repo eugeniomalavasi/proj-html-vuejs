@@ -25,7 +25,7 @@ routes: [
     },
     {
         path: "/not-found",
-        name: "NotFound",
+        name: "notfound",
         component: NotFound,
     },
 ]

@@ -5,16 +5,18 @@ export default {
     props: {
         store: Object,
     },
-components: {
-    AboutCard,
-}
+    components: {
+        AboutCard,
+    }
 }
 </script>
 
 
 <template>
     <div class="container pt-5">
-        <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
+        <div class="title-cont">
+            <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
+        </div>
         <div class="row pt-3">
             <div class="col-4 p-1" v-for="curCard in store.imgAbout">
                 <AboutCard :cardData="curCard" />
@@ -25,5 +27,14 @@ components: {
 
 
 <style lang="scss" scoped>
+.container {
+    .title-cont {
+        width: 30%
+    }
 
+    h2 {
+        font-size: 3rem
+    }
+
+}
 </style>

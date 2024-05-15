@@ -12,7 +12,7 @@ export default {
 <template>
     <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">
         <div class="container">
-            <h2 class="text-center mb-5 h1">PLEASE SEND US YOUR QUESTIONS AND WE WONT ANSWER THEM</h2>
+            <h2 class="text-center mb-5 h1">PLEASE SEND US YOUR <span class="title-color">QUESTIONS</span> AND WE <span class="title-color">WILL</span> ANSWER THEM</h2>
         </div>
         <AppButton />
     </div>
@@ -30,11 +30,12 @@ export default {
     margin-top: 6rem;
 
     div {
-        width: 60%;
+        width: 40%;
     }
 
     h2 {
         color: white;
+        font-weight: 600;
     }
 }
 </style>

@@ -10,7 +10,7 @@ components: {
 
 <template>
     <div class="col-md-5 pe-5">
-          <h3>Please get in <span>touch</span> with <span>us</span></h3>
+          <h3>Please get in <span>touch</span> <br> with <span>us</span></h3>
           <!-- <div class="barra">
             
           </div> -->

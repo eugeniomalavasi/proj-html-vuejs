@@ -40,7 +40,7 @@ export default {
     <!-- footer top -->
     <div class="container-fluid p-5">
       <div class="row-4 d-flex">
-        <div class="col me-3">
+        <div class="col me-5">
           <img src="../assets/img/logo.png" alt="business logo" /> 
 
           <p class="mt-3">
@@ -60,7 +60,7 @@ export default {
           <h4>CONTACT</h4>
           <img class="barra" src="../assets/img/divider/dividerGradient.png" alt="">
           <ul class="p-0 ">
-            <li>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</li>
+            <li>Patricia C. Amedee 4401 Waldeck Street <br> Grapevine Nashville, TX 76051</li>
             <li class="mt-2">info@yourdomain.com</li>
             <li class="mt-3">+99 (0) 101 0000 888</li>
           </ul>

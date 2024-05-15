@@ -5,6 +5,7 @@ import AppPackPrices from '../components/AppPackPrices.vue';
 import AppCitHomepage from '../components/AppCitHomepage.vue';
 import AppCardPackPrices from '../components/AppCardPackPrices.vue';
 import AppNewsBlog from '../components/AppNewsBlog.vue';
+import AppCarousel from '../components/AppCarousel.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -17,6 +18,7 @@ export default {
         AppCardPackPrices,
         AppCitHomepage,
         AppNewsBlog,
+        AppCarousel,
     },
     data() {
         return {
@@ -30,54 +32,7 @@ export default {
     <main class="container-fluid">
         <div>
             <!-- hero carousel section 1-->
-            <header class="bg-gradient">
-                <div id="hero-carousel" class="carousel carousel-dark slide mt-4 mb-5">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block carouselImg1"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item " data-bs-interval="2000">
-                            <img src="../assets/img/Bussiness-employer-at-work.jpg" class="d-block carouselImg2"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/redHeadWomen-on-white-chair.jpg" class="d-block carouselImg3"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </header>
+            <AppCarousel />
 
             <!-- stylish! section 2 -->
             <div class="bg-gradient">
@@ -177,11 +132,11 @@ export default {
                                 behind
                                 the word mountains, far from the countries Vokalia and Consonantia, there live the blind
                                 texts. Separated they live in Bookmarksgrove.</p>
-                            <ol>
-                                <li>Far far away, behind the word mountains</li>
-                                <li>Large language ocean</li>
-                                <li>far from the countries Vokalia and Consonantia</li>
-                            </ol>
+                            <ul>
+                                <li><i class="fa-solid fa-circle fa-2xs dots" style="color: #00d9a6;"></i> Far far away, behind the word mountains</li>
+                                <li><i class="fa-solid fa-circle fa-2xs dots" style="color: #00d9a6;"></i> Large language ocean</li>
+                                <li><i class="fa-solid fa-circle fa-2xs dots" style="color: #00d9a6;"></i> Far from the countries Vokalia and Consonantia</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -217,6 +172,10 @@ main {
         height: 100%;
         width: 100%;
     }
+}
+
+.dots {
+    font-size: 10px;
 }
 
 #doubleCardSection {

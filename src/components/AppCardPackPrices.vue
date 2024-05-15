@@ -40,7 +40,7 @@ export default {
 
             <div class="containerList">
                 <ul v-for="features in cardPackPrices.listFeatures">
-                    <li>{{ features }}</li>
+                    <li><i class="fa-solid fa-circle fa-2xs dots" style="color: #00d9a6;"></i> {{ features }}</li>
                 </ul>
             </div>
         </div>

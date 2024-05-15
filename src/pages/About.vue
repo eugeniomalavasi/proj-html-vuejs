@@ -16,13 +16,13 @@ export default {
 
 <template>
     <!-- BUSINESS PRESENTATION PART -->
-    <div class="title-cont title">
-        <h1 class="text-center mb-5">About Us</h1>
+    <div class="title-cont title-color">
+        <h1 class="text-center mb-5 ">About Us</h1>
     </div>
     <section class="container">
         <div class="two-column d-flex">
             <div class="left-content">
-                <h1>We are a creative <span class="title">web design agency</span></h1>
+                <h1>We are a creative <span class="title-color">web design agency</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatibus amet officiis non ipsum
                     laborum, porro quisquam, eaque cupiditate perferendis exercitationem magnam distinctio eum? Quam,
                     maxime asperiores? Odio, provident voluptates.</p>
@@ -34,7 +34,7 @@ export default {
 
     <!-- OUR VISION PART -->
     <div class="vision-part mt-5">
-        <h2 class="text-center pt-5 pb-5">Our Vision</h2>
+        <h2 class="text-center pt-5 pb-5 fs-1">Our Vision</h2>
         <div class="container ms-vision">
             <div>
                 <ul class="d-flex">
@@ -51,9 +51,9 @@ export default {
     </div>
 
     <!-- OUR TEAM PART -->
-    <div class="container">
-        <h2 class="text-center">Get to Know <span class="title">our team</span></h2>
-        <div class="row">
+    <div class="container pt-5">
+        <h2 class="text-center">Get to Know <span class="title-color">our team</span></h2>
+        <div class="row pt-3">
             <div class="col-4 p-1" v-for="curCard in store.imgAbout">
                 <AboutCard :cardData="curCard" />
             </div>
@@ -75,7 +75,9 @@ export default {
     background-image: $third-background;
 
     h1 {
-        padding: 2rem 0;
+        padding: 4rem 0;
+        box-shadow: inset gray 0px 10px 20px -10px;
+        font-size: 5rem;
     }
 }
 

@@ -4,6 +4,7 @@ import AppOtherProject from '../components/AppOtherProject.vue';
 import AppPackPrices from '../components/AppPackPrices.vue';
 import AppCitHomepage from '../components/AppCitHomepage.vue';
 import AppCardPackPrices from '../components/AppCardPackPrices.vue';
+import AppNewsBlog from '../components/AppNewsBlog.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -15,6 +16,7 @@ export default {
         AppPackPrices,
         AppCardPackPrices,
         AppCitHomepage,
+        AppNewsBlog,
     },
     data() {
         return {
@@ -194,7 +196,7 @@ export default {
 
             <!-- latast news & and out blog section 8 -->
             <div>
-
+            <AppNewsBlog />
             </div>
 
             <!-- preFooter section 9 -->

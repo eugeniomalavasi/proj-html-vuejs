@@ -39,7 +39,7 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-image: $primary-background;
+        background-image: $transp-primary;
         color: white;
         animation: mymove 1s forwards;
         border-radius: 15px;

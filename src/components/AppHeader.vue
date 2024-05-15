@@ -46,6 +46,7 @@ export default {
     width: 100%;
     z-index: 2;
     background-color: white;
+    box-shadow: 2px 2px 10px #888888;
 
     .img-container {
         width: 20%;

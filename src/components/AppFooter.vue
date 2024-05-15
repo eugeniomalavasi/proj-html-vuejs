@@ -54,11 +54,11 @@ export default {
       </div>
     </div>
     <!-- fine sponsor -->
-    <div class="container mb-3 mt-2">
+    <div class="container-fluid p-5">
       <div class="row-4 d-flex">
-        <div class="col">
-          <img src="../assets/img/logo.png" alt="business logo" />
-          <p>
+        <div class="col me-3">
+          <img  src="../assets/img/logo.png" alt="business logo" />
+          <p class="mt-3">
             While the lovely valley teems with vapour around me, and the meridian sun
             strikes the upper surface of the impenetrable foliage of my trees.While the
             lovely valley teems with vapour around me
@@ -66,20 +66,20 @@ export default {
         </div>
         <div class="col">
           <h4>QUIK LINKS</h4>
-          <ul v-for="cur in store.listFooter">
-            <li><a href=""></a>{{ cur.title }}</li>
+          <ul class="p-0 mt-3">
+            <li v-for="cur in store.listFooter"><a href="" class="list">{{ cur.title }}</a></li>
           </ul>
         </div>
         <div class="col">
           <h4>CONTACT</h4>
-          <ul>
-            <li>{{ store.cardContact[0].text }}</li>
-            <li>{{ store.cardContact[1].mail }}</li>
-            <li>+99 (0) 101 0000 888</li>
+          <ul class="p-0 mt-3">
+            <li>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</li>
+            <li class="mt-2">info@yourdomain.com</li>
+            <li class="mt-3">+99 (0) 101 0000 888</li>
           </ul>
         </div>
         <div class="col">
-          <h4>LOCATION ON MAP</h4>
+          <h4 class="mb-3">LOCATION ON MAP</h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34219.59855447546!2d-73.99748458069466!3d40.70450307841089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1715758758135!5m2!1sit!2sit"
             width="400" height="250" style="border: 0" allowfullscreen="" loading="lazy"
@@ -87,9 +87,11 @@ export default {
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-space">
+
+    <!-- footer button -->
+    <div class="d-flex justify-content-between cont-button pt-3">
       <p class="par-footer">© 2024 PHLOX BUSINESS THEME</p>
-      <div class="d-flex">
+      <div class="d-flex m-0">
         <ul class="icon d-flex gap-2">
           <li>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -190,9 +192,37 @@ footer {
   justify-content: center;
 }
 
+.cont-button{
+  background-color: transparent;
+    background-image: linear-gradient(301deg, #0c0c0c 0%, #474747 100%);
+    height: 10vh;
+    color: #707070f2;
+}
+
+.list{
+  text-decoration: none;
+  color: black;
+}
+
+
 .par-footer {
   text-align: start;
   margin: 0 30px;
   width: 50%;
+}
+
+.icon{
+  margin: 0 40px;
+  li{
+    a{
+      color: #707070f2;
+    }
+    
+  }
+ 
+}
+
+h4{
+  font-weight: 700;
 }
 </style>

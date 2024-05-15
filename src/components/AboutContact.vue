@@ -1,5 +1,10 @@
 <script>
+import AppButton from '../components/AppButton.vue'
+
 export default {
+    components: {
+        AppButton
+    }
 }
 </script>
 

@@ -87,9 +87,9 @@ export default {
         </div>
       </div>
     </div>
-    <div class="d-flex">
+    <div class="d-flex justify-content-space">
       <p class="par-footer">© 2024 PHLOX BUSINESS THEME</p>
-      <div>
+      <div class="d-flex">
         <ul class="icon d-flex gap-2">
           <li>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -193,5 +193,6 @@ footer {
 .par-footer {
   text-align: start;
   margin: 0 30px;
+  width: 50%;
 }
 </style>

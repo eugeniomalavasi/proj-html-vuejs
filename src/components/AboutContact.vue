@@ -20,6 +20,6 @@ export default {
 </template>
 
 
-<style lang="scsss" scoped>
+<style lang="scss" scoped>
     
 </style>

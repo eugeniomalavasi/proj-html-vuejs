@@ -1,15 +1,15 @@
 <script>
 import AppButton from '../components/AppButton.vue'
-import AboutCard from '../components/AboutCard.vue'
 import AboutBusiness from '../components/AboutBusiness.vue'
 import { store } from '../store';
 import AboutVision from '../components/AboutVision.vue';
+import AboutTeam from '../components/AboutTeam.vue';
 export default {
     components: {
         AppButton,
-        AboutCard,
         AboutBusiness,
-        AboutVision
+        AboutVision,
+        AboutTeam
     }, data() {
         return {
             store,
@@ -26,14 +26,15 @@ export default {
     <AboutVision :store="store"/>
 
     <!-- OUR TEAM PART -->
-    <div class="container pt-5">
-        <h2 class="text-center">Get to Know <span class="title-color">our team</span></h2>
+    <AboutTeam :store="store"/>
+    <!-- <div class="container pt-5">
+        <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
         <div class="row pt-3">
             <div class="col-4 p-1" v-for="curCard in store.imgAbout">
                 <AboutCard :cardData="curCard" />
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- CONTACT US -->
     <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">

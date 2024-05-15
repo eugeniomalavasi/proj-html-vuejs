@@ -9,7 +9,8 @@ props:  {
 
 <template>
     <div class="vision-part mt-5">
-        <h2 class="text-center pt-5 pb-5 fs-1">Our Vision</h2>
+        <h2 class="text-center pt-5 pb-5">Our Vision</h2>
+        <img src="../assets/img/divider/dividerWhite.svg" class="divider" alt="">
         <div class="container ms-vision">
             <div>
                 <ul class="d-flex">
@@ -32,7 +33,9 @@ props:  {
     background-image: url(../assets/img/about-img/blur-office.jpg);
     color: white;
     background-size: cover;
-
+    h2 {
+        font-size: 4rem;
+    }
     .ms-vision {
         height: 100%;
         display: flex;

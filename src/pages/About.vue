@@ -77,7 +77,8 @@ export default {
     h1 {
         padding: 4rem 0;
         box-shadow: inset gray 0px 10px 20px -10px;
-        font-size: 5rem;
+        font-size: 3rem;
+        font-weight: 600;
     }
 }
 
@@ -109,10 +110,10 @@ export default {
         }
 
         .circle {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 3px solid rgba(255, 255, 255, 0.5);
 
             .icon-style {
                 font-size: 3rem;

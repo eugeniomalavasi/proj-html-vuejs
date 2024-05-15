@@ -20,20 +20,13 @@ export default {
     <div>
       <div class="row">
         <div class="col-sm-6 mb-3 mb-sm-0">
-          <div
-            class="card carddx text-center d-flex align-items-center justify-content-center"
-          >
+          <div class="card carddx text-center d-flex align-items-center justify-content-center">
             <div class="card-body">
               <p class="card-text">Are You Ready?</p>
               <h3>Start a New Project</h3>
               <div class="input">
-                <input
-                  class="input-email"
-                  type="email"
-                  name="EMAIL"
-                  placeholder="Enter Your Email Address"
-                  required=""
-                />
+                <input class="input-email" type="email" name="EMAIL" placeholder="Enter Your Email Address"
+                  required="" />
                 <input class="input-submit" type="submit" value="SUBMIT" />
               </div>
             </div>
@@ -89,13 +82,8 @@ export default {
           <h4>LOCATION ON MAP</h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34219.59855447546!2d-73.99748458069466!3d40.70450307841089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1715758758135!5m2!1sit!2sit"
-            width="400"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            width="400" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -184,6 +172,7 @@ footer {
   width: 85%;
   box-shadow: -3px 9px 34px 0 rgba(0, 0, 0, 0.25);
 }
+
 .card-sponsor {
   min-width: 200px;
   min-height: 150px;
@@ -193,6 +182,12 @@ footer {
   padding: 240px 0 113px;
   // position: relative;
   // top: -145px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .par-footer {

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="row d-flex align-items-stretch  mr-0 pos">
+  <div class="row d-flex align-items-stretch   pos flex-grow-2">
     <div class="col-md-4 mb-4 p-1" v-for="index in store.cardContact" :key="index.id">
       <div class="card d-flex flex-column p-2">
         <div class="card-body">
@@ -42,12 +42,19 @@ export default {
 }
 .card{
     height: 30vh;
-    width: 25vw;
+     width: 28vw;
 }
 
 i {
-  font-size: 80px;
+  font-size: 7rem;
   color: #00d9a6;
+}
+h5{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.3rem;
+  margin-top: 19px;
 }
 
 

@@ -10,10 +10,11 @@ components: {
 
 <template>
     <div class="col-md-5 pe-5">
-          <h3>Please get intouch withus</h3>
-          <div class="barra">
+          <h3>Please get in <span>touch</span> with <span>us</span></h3>
+          <!-- <div class="barra">
             
-          </div>
+          </div> -->
+          <img class="barra" src="../assets/img/divider/dividerGradient.png" alt="">
           <p>
             Please get in touch with us. When, while the lovely valley teems with vapour
             around me, and the meridian sun strikes the upper surface of the impenetrable
@@ -67,20 +68,15 @@ components: {
 <style lang="scss" scoped>
 @use"../style/partials/_variables" as*;
 
-.barra{
-    height: 5px;
-    background-image: linear-gradient(to right,#9be15d 0%, #00d9a6 100%);
-    content: "";
-    width: 68px;
-    border-radius: 5px;
-    margin: 0 5px;
-    margin-bottom: 10px;
-  }
-  
+.barra {
+  width: 10%;
+}
+
   p{
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.6em;
+    padding-top: 30px;
   }
 
 .container {
@@ -113,6 +109,10 @@ h5 {
 
 .button {
   text-align: end;
-  margin-top: 25px;
+  margin-top: 50px;
+}
+
+span{
+  color: $title-color;
 }
 </style>

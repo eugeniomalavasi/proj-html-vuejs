@@ -4,15 +4,15 @@ export default {
         return {
             menu: [
                 {
-                    title: "Home",
+                    title: "HOME",
                     routeName: "home"
                 },
                 {
-                    title: "Contacts",
+                    title: "CONTACTS",
                     routeName: "contacts"
                 },
                 {
-                    title: "About",
+                    title: "ABOUT",
                     routeName: "about"
                 },
             ]
@@ -29,7 +29,7 @@ export default {
             <img src="../assets/img/logo.png" alt="business logo">
         </div>
         <!-- MENU LIST ITEM -->
-        <ul>
+        <ul class="align-items-center">
             <li v-for="item in menu">
                 <router-link :to="{ name: item.routeName }" class="nav-link p-3">{{ item.title }}</router-link>
             </li>
@@ -57,6 +57,7 @@ export default {
 
         .router-link-active {
             color: blue;
+            font-weight: 600;
         }
     }
 

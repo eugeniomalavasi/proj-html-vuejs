@@ -1,9 +1,9 @@
 <script>
-import AppButton from '../components/AppButton.vue'
+import AppButtonGreen from '../components/AppButtonGreen.vue'
 
 export default {
     components: {
-        AppButton
+        AppButtonGreen
     }
 }
 </script>
@@ -14,7 +14,7 @@ export default {
         <div class="container">
             <h2 class="text-center mb-5 h1">PLEASE SEND US YOUR <span class="title-color">QUESTIONS</span> AND WE <span class="title-color">WILL</span> ANSWER THEM</h2>
         </div>
-        <AppButton />
+        <AppButtonGreen />
     </div>
 </template>
 

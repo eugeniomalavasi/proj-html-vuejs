@@ -9,11 +9,9 @@ components: {
 </script>
 
 <template>
+  <!-- cont sx -->
     <div class="col-md-5 pe-5">
           <h3>Please get in <span>touch</span> <br> with <span>us</span></h3>
-          <!-- <div class="barra">
-            
-          </div> -->
           <img class="barra" src="../assets/img/divider/dividerGradient.png" alt="">
           <p>
             Please get in touch with us. When, while the lovely valley teems with vapour
@@ -24,6 +22,7 @@ components: {
             trees.
           </p>
         </div>
+         <!-- cont sx -->
         <!-- form -->
         <div class="col-md-7 mt-4">
           <form class="row g-3">

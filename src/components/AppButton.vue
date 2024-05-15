@@ -18,7 +18,7 @@ button {
     border-radius: 25px;
     background-color: black;
     &:hover {
-        background-color: $title-color;
+        background-image:$primary-background;
         box-shadow: 5px 5px 18px $title-color;
     }
 }

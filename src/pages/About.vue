@@ -1,15 +1,17 @@
 <script>
+import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 import AboutBusiness from '../components/AboutBusiness.vue'
-import { store } from '../store';
 import AboutVision from '../components/AboutVision.vue';
 import AboutTeam from '../components/AboutTeam.vue';
+import AboutContact from '../components/AboutContact.vue';
 export default {
     components: {
         AppButton,
         AboutBusiness,
         AboutVision,
-        AboutTeam
+        AboutTeam,
+        AboutContact
     }, data() {
         return {
             store,
@@ -27,36 +29,10 @@ export default {
 
     <!-- OUR TEAM PART -->
     <AboutTeam :store="store"/>
-    <!-- <div class="container pt-5">
-        <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
-        <div class="row pt-3">
-            <div class="col-4 p-1" v-for="curCard in store.imgAbout">
-                <AboutCard :cardData="curCard" />
-            </div>
-        </div>
-    </div> -->
 
     <!-- CONTACT US -->
-    <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">
-        <h2 class="text-center mb-5">PLEASE SEND US YOUR QUESTIONS AND WE WONT ANSWER THEM</h2>
-        <AppButton />
-    </div>
+    <AboutContact />
+
 </template>
 
-<style lang="scss" scoped>
-@use"../style/partials/_variables" as*;
-.two-column img {
-    margin-top: 5rem;
-}
-
-.ms-contact-us {
-    background-image: url(../assets/img/about-img/contact-us.jpg);
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-
-    h2 {
-        color: white;
-    }
-}
-</style>
+<style lang="scss" scoped></style>

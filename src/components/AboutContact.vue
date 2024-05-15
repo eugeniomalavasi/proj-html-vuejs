@@ -1,25 +1,35 @@
 <script>
 export default {
-    components: {
-
-    },
-
-    data() {
-        return {
-            
-        }
-    },
 }
 </script>
 
 
 <template>
-    <div>
-        
+    <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">
+        <div class="container">
+            <h2 class="text-center mb-5 h1">PLEASE SEND US YOUR QUESTIONS AND WE WONT ANSWER THEM</h2>
+        </div>
+        <AppButton />
     </div>
 </template>
 
 
 <style lang="scss" scoped>
-    
+
+
+.ms-contact-us {
+    background-image: url(../assets/img/about-img/contact-us.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 6rem;
+
+    div {
+        width: 60%;
+    }
+
+    h2 {
+        color: white;
+    }
+}
 </style>

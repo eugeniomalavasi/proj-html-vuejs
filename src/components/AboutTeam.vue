@@ -25,6 +25,5 @@ components: {
 
 
 <style lang="scss" scoped>
-@use"../style/partials/_variables" as*;
 
 </style>

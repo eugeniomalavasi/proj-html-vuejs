@@ -1,7 +1,9 @@
 <script>
+import AppButton from '../components/AppButton.vue'
+
 export default {
     components: {
-
+        AppButton
     },
 
     data() {
@@ -49,7 +51,9 @@ export default {
         font-weight: 600;
     }
 }
-
+.two-column img {
+    margin-top: 5rem;
+}
 .back-col {
     background-image: $third-background;
     height: 100%;
@@ -58,7 +62,4 @@ export default {
     z-index: -1;
 }
 
-img {
-    margin-top: 4rem;
-}
 </style>

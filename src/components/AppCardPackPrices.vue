@@ -24,21 +24,18 @@ export default {
 </script>
 
 <template>
-    <div class="">
-        <div class="cardProject ms-card ">
+    <div class="container-card">
+        <div class="cardProject ms-card " >
             <div>
-
+                <div class="border-top" :class="{ 'border-adviced': cardPackPrices.isActive, 'border-containerPrice': cardPackPrices.isActive == false }"></div>
             </div>
             <div class="containerDiv">
-                <h1>{{ cardPackPrices.title }}</h1>
+                <h4>{{ cardPackPrices.title }}</h4>
                 <p>{{ cardPackPrices.subTitle }}</p>
             </div>
             <div :class="{ 'adviced': cardPackPrices.isActive, 'containerPrice': cardPackPrices.isActive == false }">
-                <!-- :class="{ 'adviced': store.cardPrices.flag, 'containerPrice': store.cardPrices.flag == false }" -->
-                <!-- :class="{'round' : isRound, 'green': isGreen}"
-                "{'adviced' : store.cardPrices.flag, 'containerPrice': !store.cardPrices.flag}" -->
 
-                <h2>${{ cardPackPrices.price }}/ Design</h2>
+                <h2><span>$</span>{{ cardPackPrices.price }}<span>/ Design</span></h2>
             </div>
 
             <div class="containerList">
@@ -53,12 +50,20 @@ export default {
 <style lang="scss" scoped>
 @use"../style/partials/_variables" as*;
 
+
 .cardProject {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    .border-top {
+        border-radius: 20px 20px 0 0;
+        height: 10px;
+    }
 
     .overImg {
         position: relative;
+        padding: 20px;
     }
 
     .overText {
@@ -69,11 +74,39 @@ export default {
 
     .adviced {
         background-image: $primary-background;
+        color: white;
+        padding: 40px;
+    }
+
+    .border-adviced {
+        background-image: $primary-background;
+        color: white;
+        padding: 10px;
+    }
+
+    .containerList {
+        padding: 20px;
+    }
+
+    .containerDiv {
+        padding: 10px;
+
+        h4 {
+            font-weight: bold;
+        }
     }
 
     .containerPrice {
         background-image: $secondary-background;
         color: white;
+        padding: 40px;
+        min-height: 20px;
+    }
+
+    .border-containerPrice {
+        background-image: $secondary-background;
+        color: white;
+        padding: 10px;
     }
 }
 </style>

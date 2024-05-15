@@ -207,21 +207,21 @@ export const store = reactive({
             subTitle: "All Designs",
             price: "10",
             isActive: false,
-            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+            listFeatures: ["Creative Design Enabled", "Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
         },
         {
-            title: "DESIGNING",
-            subTitle: "All Designs",
+            title: "DEVELOPMENT",
+            subTitle: "WordPress Project",
             price: "15",
             isActive: true,
-            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+            listFeatures: ["Creative Design Enabled", "Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
         },
         {
-            title: "DESIGNING",
-            subTitle: "All Designs",
+            title: "SEO",
+            subTitle: "Web Products",
             price: "10",
             isActive: false,
-            listFeatures: ["Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
+            listFeatures: ["Creative Design Enabled", "Vibrant Color Usage","Eye Catching Design","Extreme Typography","Exceptional Design"]
         },
     ]
 });

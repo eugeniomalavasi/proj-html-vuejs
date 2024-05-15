@@ -15,37 +15,23 @@ export default {
 
 <template>
     <div class="cardProject ms-card">
-        <div class="overImg">
             <img :src="getImageUrl(cardProject.imgPath)" alt="">
-            <div class="overText back-card">
+            <div class="back-card">
                 <h1>{{ cardProject.title }}</h1>
                 <p>{{ cardProject.subTitle }}</p>
             </div>
-        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
 @use"../style/partials/_variables" as*;
 
-.cardProject {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
-    aspect-ratio: 1;
-
-    .overImg {
-        position: relative;
-    }
-
-    .overText {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-
-    }
 
     .ms-card {
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    aspect-ratio: 1;
 
 
     &:hover .back-card {
@@ -80,6 +66,5 @@ export default {
         height: 100%;
         width: 100%;
     }
-}
 }
 </style>

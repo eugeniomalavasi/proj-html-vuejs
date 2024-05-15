@@ -16,6 +16,8 @@ export default {
     <div class="container pt-5">
         <div class="title-cont">
             <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
+            <img src="../assets/img/divider/dividerGradient.png" class="divider mt-3" alt="divider">
+
         </div>
         <div class="row pt-3">
             <div class="col-4 p-1" v-for="curCard in store.imgAbout">

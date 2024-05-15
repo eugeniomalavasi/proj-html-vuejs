@@ -10,7 +10,7 @@ props:  {
 <template>
     <div class="vision-part mt-5">
         <h2 class="text-center pt-5 pb-5">Our Vision</h2>
-        <img src="../assets/img/divider/dividerWhite.svg" class="divider" alt="">
+        <img src="../assets/img/divider/dividerWhite.png" class="divider" alt="divider">
         <div class="container ms-vision">
             <div>
                 <ul class="d-flex">

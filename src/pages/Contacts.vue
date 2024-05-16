@@ -89,5 +89,6 @@ iframe {
 .cont-contact {
   padding-right: 100px;
   padding-left: 100px;
+  margin-top: 60px;
 }
 </style>

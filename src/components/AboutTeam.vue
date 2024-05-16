@@ -7,7 +7,7 @@ export default {
     },
     components: {
         AboutCard,
-    }
+    },
 }
 </script>
 

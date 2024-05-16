@@ -43,4 +43,9 @@ margin-bottom: 150px;
 
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 </style>

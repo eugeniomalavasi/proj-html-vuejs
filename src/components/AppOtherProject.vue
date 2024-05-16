@@ -17,8 +17,10 @@ export default {
     <div class="cardProject ms-card">
             <img :src="getImageUrl(cardProject.imgPath)" alt="">
             <div class="back-card">
-                <h1>{{ cardProject.title }}</h1>
+                <div>
+                <h4>{{ cardProject.title }}</h4>
                 <p>{{ cardProject.subTitle }}</p>
+                </div>
             </div>
     </div>
 </template>
@@ -36,8 +38,8 @@ export default {
 
     &:hover .back-card {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
+        align-items: start;
         flex-direction: column;
         background-image: $transp-primary;
         color: white;
@@ -60,6 +62,10 @@ export default {
     }
 
     .back-card {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 20px;
         scale: 0;
         position: absolute;
         top: 0;

@@ -32,6 +32,10 @@ export default {
         animation: mymove 1s forwards;
         border-radius: 15px;
         color: white;
+
+        i {
+            color: white;
+        }
     }
 
     h3{

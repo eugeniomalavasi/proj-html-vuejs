@@ -8,6 +8,7 @@ import AppNewsBlog from '../components/AppNewsBlog.vue';
 import AppCarousel from '../components/AppCarousel.vue';
 import AppDoubleCard from '../components/AppDoubleCard.vue';
 import AppOurMissionSec from '../components/AppOurMissionSec.vue';
+import AppOtherProjectSection from '../components/AppOtherProjectSection.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -23,6 +24,7 @@ export default {
         AppCarousel,
         AppDoubleCard,
         AppOurMissionSec,
+        AppOtherProjectSection,
     },
     data() {
         return {
@@ -61,32 +63,7 @@ export default {
             <!-- mission section 3 -->
             <AppOurMissionSec class="scroll-animation"/>
             <!-- other project section 4 -->
-            <div class="bg-gradient">
-                <div class="container mt-4">
-                    <div class="row  mt-4 mb-5">
-                        <div class="col-6">
-                            <h1>Our recentweb designs&
-                                some examples of
-                                pastprojects</h1>
-                        </div>
-                        <div class="col-6">
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                the
-                                Semantics, a large language ocean.Separated they live in Bookmarksgrove.Far far away,
-                                behind
-                                the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                                texts. Separated they live in Bookmarksgrove.</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-wrap">
-                        <div class="col-3 p-0 flex-wrap" v-for="otherProjectImg in store.cardOtherProject">
-                            <AppOtherProject :cardProject="otherProjectImg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <AppOtherProjectSection class="scroll-animation"/>
             <!-- double card section 5 -->
             <AppDoubleCard class="scroll-animation"/>
 

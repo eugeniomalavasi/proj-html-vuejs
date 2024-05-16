@@ -1,9 +1,10 @@
 <script>
-import AppButton from "./AppButton.vue";
+
+import AppButtonGreen from "./AppButtonGreen.vue";
 
 export default {
   components: {
-    AppButton,
+    AppButtonGreen,
   },
 }
 </script>
@@ -27,7 +28,7 @@ export default {
         <p class="card-text">What Are You Waiting for?</p>
         <h3 class="card-title title">Let's Talk About Work</h3>
         <div class="button">
-          <AppButton />
+          <AppButtonGreen />
         </div>
       </div>
     </div>

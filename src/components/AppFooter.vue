@@ -1,12 +1,13 @@
 <script>
-import AppButton from "./AppButton.vue";
+
 import FooterCard from "./FooterCard.vue";
 import { store } from "../store";
 import FooterSponsor from "./FooterSponsor.vue";
+import AppButtonGreen from "./AppButtonGreen.vue";
 
 export default {
   components: {
-    AppButton,
+    AppButtonGreen,
     FooterCard,
     FooterSponsor,
   },

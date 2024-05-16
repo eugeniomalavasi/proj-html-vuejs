@@ -36,6 +36,7 @@ export default {
 
     .div-cust {
         display: block;
+        margin: 0 auto;
     }
 
     h2 {

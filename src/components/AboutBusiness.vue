@@ -18,7 +18,7 @@ export default {
 
 
 <template>
-    <div class="title-cont title-color">
+    <div class="title-cont title-color header-animation">
         <h1 class="text-center mb-5">About Us</h1>
     </div>
     <div class="back-col"></div>
@@ -65,5 +65,20 @@ export default {
     width: 80%;
     position: absolute;
     z-index: -1;
+}
+
+.header-animation {
+    animation: header-fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes header-fade-out {
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 </style>

@@ -70,8 +70,8 @@ export default {
         border-radius: 10px;
 
         .icon-img {
-            height: 50px;
-            width: 50px;
+            height: 60px;
+            width: 60px;
             border-radius: 50%;
             border: 3px solid white;
             object-fit: cover;

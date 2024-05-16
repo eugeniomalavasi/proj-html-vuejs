@@ -21,7 +21,7 @@ export default {
 <template>
   <footer>
     <!-- card footer centrali -->
-  <div class="conteiner-fluid">
+  <div class="conteiner-fluid scroll-animation">
     <div>
       <div class="row">
         <FooterCard />
@@ -30,7 +30,7 @@ export default {
     <!-- fine card footer centrali -->
 
     <!-- sponsor -->
-    <div class="d-flex flex-row mt-5 align-items-center card-sponsor">
+    <div class="d-flex flex-row mt-5 align-items-center card-sponsor ">
     
       <FooterSponsor :store="store"/>
     </div>

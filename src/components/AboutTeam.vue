@@ -1,14 +1,14 @@
 <script>
-import AboutCard from '../components/AboutCard.vue'
+    import AboutCard from '../components/AboutCard.vue'
 
-export default {
-    props: {
-        store: Object,
-    },
-    components: {
-        AboutCard,
-    },
-}
+    export default {
+        props: {
+            store: Object,
+        },
+        components: {
+            AboutCard,
+        },
+    }
 </script>
 
 
@@ -16,7 +16,7 @@ export default {
     <div class="container pt-5 scroll-animation">
         <div class="title-cont">
             <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
-            <img src="../assets/img/divider/dividerGradient.png" class="divider mt-3" alt="divider">
+            <img src="../assets/img/divider/dividerGradient.png" class="divider mt-3 div-cust" alt="divider">
 
         </div>
         <div class="row pt-3">
@@ -29,14 +29,19 @@ export default {
 
 
 <style lang="scss" scoped>
-.container {
-    .title-cont {
-        width: 30%
-    }
+    .container {
+        .title-cont {
+            width: 30%;
 
-    h2 {
-        font-size: 3rem
-    }
+            .div-cust {
+                display: block;
+            }
+        }
 
-}
+
+        h2 {
+            font-size: 3rem
+        }
+
+    }
 </style>

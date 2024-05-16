@@ -17,10 +17,11 @@ export default {
     <div class="ms-chat">
         <!-- CHAT MAIN WINDOW -->
         <div class="chat-window" v-show="chatOpen">
-
             <div class="top-chat">
-
+                <p class="mb-2 fs-5">How can we help?</p>
+                <p class="subtext">We will respond in a few moments</p>
             </div>
+
             <div class="form-container d-flex justify-content-center">
                 <form>
                     <div class="text-center">
@@ -53,31 +54,46 @@ export default {
 
 .ms-chat {
     position: fixed;
-    left: 85%;
+    left: 80%;
     bottom: 10%;
     z-index: 5;
-    // background-color: lightgray;
-
-
     width: 15%;
 
-    .form-container {
-        background-image: $secondary-background;
-        border-radius: 10px;
-        padding: 1rem;
-        color: white;
-    }
-
     .chat-window {
-        input {
-            width: 80%;
-            border-radius: 5px;
-            border: none;
+        box-shadow: 2px 2px 5px 5px #888888;
+        background-color: #dbdbdb;
+        border-radius: 10px;
+
+        .top-chat {
+            background-color: $title-color;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+            border-radius: 10px 10px 0 0;
+
+            .subtext{
+                font-size: 0.8rem;
+                color: rgb(50, 50, 50);
+                font-weight: 600;
+            }
         }
 
-        .text-area {
-            height: 150px;
+        .form-container {
+            color: black;
+            padding: 1.2rem;
+
+            input {
+                width: 100%;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .text-area {
+                height: 150px;
+            }
         }
+
     }
 
     .chat-btn {

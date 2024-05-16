@@ -1,16 +1,16 @@
 <script>
 export default {
-props:  {
-    store: Object,
-}
+    props: {
+        store: Object,
+    }
 }
 </script>
 
 
 <template>
-    <div class="vision-part mt-5">
+    <div class="vision-part mt-5 scroll-animation">
         <h2 class="text-center pt-5 pb-5">Our Vision</h2>
-        <img src="../assets/img/divider/dividerWhite.png" class="divider" alt="divider">
+        <img src="../assets/img/divider/dividerWhite.png" class="divider div-cust" alt="divider">
         <div class="container ms-vision">
             <div>
                 <ul class="d-flex">
@@ -33,9 +33,15 @@ props:  {
     background-image: url(../assets/img/about-img/blur-office.jpg);
     color: white;
     background-size: cover;
+
+    .div-cust {
+        display: block;
+    }
+
     h2 {
         font-size: 4rem;
     }
+
     .ms-vision {
         height: 100%;
         display: flex;

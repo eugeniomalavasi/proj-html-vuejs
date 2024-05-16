@@ -38,7 +38,7 @@ export default {
     <!-- fine sponsor -->
 
     <!-- footer top -->
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-5 footer-top">
       <div class="row-4 d-flex">
         <div class="col me-5">
           <img src="../assets/img/logo.png" alt="business logo" /> 
@@ -100,7 +100,7 @@ export default {
 @use"../style/partials/_variables" as*;
 
 footer {
-  padding-top: 200px;
+  padding-top: 300px;
 
   .row {
     margin: 10px;   
@@ -160,4 +160,9 @@ h4{
   margin-bottom: 10px;
 }
 
+
+.footer-top{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 </style>

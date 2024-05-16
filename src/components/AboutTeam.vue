@@ -13,7 +13,7 @@ export default {
 
 
 <template>
-    <div class="container pt-5">
+    <div class="container pt-5 scroll-animation">
         <div class="title-cont">
             <h2 class="text-center">Get to Know <span class="title-color fw-bold">our team</span></h2>
             <img src="../assets/img/divider/dividerGradient.png" class="divider mt-3" alt="divider">

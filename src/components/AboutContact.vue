@@ -10,7 +10,7 @@ export default {
 
 
 <template>
-    <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column">
+    <div class="ms-contact-us d-flex align-items-center justify-content-center flex-column scroll-animation">
         <div class="container">
             <h2 class="text-center mb-5 h1">PLEASE SEND US YOUR <span class="title-color">QUESTIONS</span> AND WE <span class="title-color">WILL</span> ANSWER THEM</h2>
         </div>
@@ -38,4 +38,5 @@ export default {
         font-weight: 600;
     }
 }
+
 </style>

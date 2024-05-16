@@ -29,13 +29,17 @@ export default {
 
             <div class="form-container d-flex justify-content-center">
                 <form>
-                    <div class="text-center">
-                        <label for="name">Name</label> <br>
+                    <div class="text-center pb-3">
+                        <label for="name">Name:</label> <br>
                         <input type="text" id="name">
                     </div>
-                    <div class="text-center">
-                        <label for="surname">Surname</label>
+                    <div class="text-center pb-3">
+                        <label for="surname">Surname:</label>
                         <input type="text" id="surname">
+                    </div>
+                    <div class="text-center pb-3">
+                        <label for="email">Your email:</label>
+                        <input type="email" id="email">
                     </div>
                     <div class="text-center">
                         <label for="text-area">Your message:</label>

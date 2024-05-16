@@ -18,6 +18,11 @@ export default {
         <!-- CHAT MAIN WINDOW -->
         <div class="chat-window" v-show="chatOpen">
             <div class="top-chat">
+                <ul class="d-flex flex-wrap">
+                    <li v-for="curImg in store.imgAbout">
+                        <img :src="curImg.imgUrl" alt="" class="icon-img">
+                    </li>
+                </ul>
                 <p class="mb-2 fs-5">How can we help?</p>
                 <p class="subtext">We will respond in a few moments</p>
             </div>
@@ -55,7 +60,7 @@ export default {
 .ms-chat {
     position: fixed;
     left: 80%;
-    bottom: 10%;
+    bottom: 5%;
     z-index: 5;
     width: 15%;
 
@@ -63,6 +68,14 @@ export default {
         box-shadow: 2px 2px 5px 5px #888888;
         background-color: #dbdbdb;
         border-radius: 10px;
+
+        .icon-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
 
         .top-chat {
             background-color: $title-color;
@@ -72,7 +85,7 @@ export default {
             color: white;
             border-radius: 10px 10px 0 0;
 
-            .subtext{
+            .subtext {
                 font-size: 0.8rem;
                 color: rgb(50, 50, 50);
                 font-weight: 600;

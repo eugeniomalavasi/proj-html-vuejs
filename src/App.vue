@@ -11,11 +11,11 @@ export default {
     AppHeader,
     AppFooter,
     AppChat,
-    store,
+
   },
   data() {
     return {
-
+      store,
     }
   },
 }
@@ -29,6 +29,7 @@ export default {
   <router-view class="main"></router-view>
 
   <AppFooter />
+
 </template>
 
 <style lang="scss">

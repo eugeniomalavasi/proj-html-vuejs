@@ -47,7 +47,7 @@ export default {
 
 .title-contact {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   background-image: $third-background;
  
   h1 {

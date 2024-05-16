@@ -54,16 +54,13 @@ export default {
     border-radius: 20px;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-<<<<<<< HEAD
- 
-=======
+
 
     h5 {
         color: gray;
-    }
->>>>>>> d23849207644b070c66ca886edbf21d46725f73d
+    
 }
-
+}
 .card-info {
     padding: 60px 40px;
     top: 70%;

@@ -1,9 +1,13 @@
 <script>
-import { store } from '../store';
+
 export default {
+props : {
+  store: Object,
+},
+
   data() {
     return {
-      store,
+    
     }
   }
 

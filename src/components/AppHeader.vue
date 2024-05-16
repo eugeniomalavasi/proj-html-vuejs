@@ -50,12 +50,12 @@ export default {
 
     .img-container {
         width: 20%;
-        line-height: 60px;
+        line-height: 75px;
     }
 
     ul {
         display: flex;
-
+        margin-bottom: 0;
         .router-link-active {
             color: blue;
             font-weight: 600;

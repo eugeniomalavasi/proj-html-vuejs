@@ -9,6 +9,7 @@ import AppCarousel from '../components/AppCarousel.vue';
 import AppDoubleCard from '../components/AppDoubleCard.vue';
 import AppOurMissionSec from '../components/AppOurMissionSec.vue';
 import AppOtherProjectSection from '../components/AppOtherProjectSection.vue';
+import AppStylishSection from '../components/AppStylishSection.vue';
 import { store } from '../store';
 import AppButton from '../components/AppButton.vue'
 
@@ -25,6 +26,7 @@ export default {
         AppDoubleCard,
         AppOurMissionSec,
         AppOtherProjectSection,
+        AppStylishSection,
     },
     data() {
         return {
@@ -40,45 +42,23 @@ export default {
             <!-- hero carousel section 1-->
             <AppCarousel />
             <!-- stylish! section 2 -->
-            <div class="bg-gradient">
-                <div class="container" id="stylish">
-                    <div class="row mt-4 mb-5">
-                        <div class="col-5">
-                            <h1>We Are Here To <br>
-                                Make Your <span class="title-color">Website</span> <br>
-                                Look More <span class="title-color">Elegant</span> <br> And Stylish!</h1>
-                                <img class="divider mt-3" src="../assets/img/divider/dividerGradient.png" alt="">
-                            <AppButton class="mt-2 d-block"/>
-                        </div>
-
-                        <div class="col-7 d-flex flex-wrap">
-                            <div class="col-6 flex-grow-2 flex-wrap p-3" v-for="iconCard in store.cardHomeArray">
-                                <AppCardHome :cardIcon="iconCard" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <AppStylishSection class="scroll-animation"/>
             <!-- mission section 3 -->
             <AppOurMissionSec class="scroll-animation"/>
             <!-- other project section 4 -->
             <AppOtherProjectSection class="scroll-animation"/>
             <!-- double card section 5 -->
             <AppDoubleCard class="scroll-animation"/>
-
             <!-- pack price section 6 -->
             <AppPackPrices class="scroll-animation"/>
             <!-- overlay citation section 7 -->
             <div>
             <AppCitHomepage />
             </div>
-
             <!-- latast news & and out blog section 8 -->
             <div>
             <AppNewsBlog class="scroll-animation"/>
             </div>
-
             <!-- preFooter section 9 -->
         </div>
     </main>

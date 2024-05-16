@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="row d-flex align-items-stretch pos flex-grow-2">
     <div class="col-md-4 mb-4 p-1" v-for="index in store.cardContact" :key="index.id">
-      <div class="card d-flex flex-column p-2" >
+      <div class="card d-flex flex-column p-2 " >
         <div class="card-body">
           <div class="row">
             <div class="col-auto d-flex align-items-center mt-5">

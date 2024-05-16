@@ -30,7 +30,7 @@ export default {
     <!-- fine card footer centrali -->
 
     <!-- sponsor -->
-    <div class="d-flex flex-row mt-5 align-items-center card-sponsor ">
+    <div class="d-flex flex-row mt-5 align-items-center card-sponsor">
     
       <FooterSponsor :store="store"/>
     </div>

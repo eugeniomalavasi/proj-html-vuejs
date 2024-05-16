@@ -35,7 +35,7 @@ export default {
     >
     </iframe>
     <!-- container card -->
-    <div class="container mt-3 scroll-animation">
+    <div class="container mt-3">
       <AppCardContact />
     </div>
   </div>

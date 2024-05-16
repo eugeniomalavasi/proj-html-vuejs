@@ -4,6 +4,8 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppChat from './components/AppChat.vue'
 
+
+
 export default {
   components: {
     AppHeader,

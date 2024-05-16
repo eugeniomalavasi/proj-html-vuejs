@@ -63,7 +63,7 @@ export default {
 
 .ms-chat {
     position: fixed;
-    left: 80%;
+    left: 83%;
     bottom: 5%;
     z-index: 5;
     width: 15%;

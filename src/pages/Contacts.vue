@@ -36,10 +36,10 @@ export default {
     </iframe>
     <!-- container card -->
     <div class="container mt-3">
-      <AppCardContact />
+      <AppCardContact :store="store"/>
     </div>
   </div>
-
+  <!-- /container card -->
   <!-- section contact -->
 
   <section class="scroll-animation">
@@ -49,6 +49,7 @@ export default {
       </div>
     </div>
   </section>
+  <!-- /section contact -->
 </template>
 
 <style lang="scss" scoped>

@@ -1,15 +1,17 @@
 @import"@fortawesome/fontawesome-free/css/all.min.css";
 @import"bootstrap/scss/bootstrap";
 
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
 }
+
 img {
     max-width: 100%;
 }
@@ -50,7 +52,7 @@ ul {
 }
 
 .divider-size {
-width: 10%;
+    width: 10%;
 }
 
 ul {
@@ -58,7 +60,7 @@ ul {
 }
 
 .scroll-animation {
-    scale: .8; 
+    scale: .8;
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
@@ -70,4 +72,8 @@ ul {
         scale: 1;
         opacity: 1;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }

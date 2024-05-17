@@ -5,7 +5,7 @@ import About from './pages/About.vue';
 import Contacts from './pages/Contacts.vue';
 import NotFound from './pages/NotFound.vue';
 
-const router = createRouter ({
+const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
@@ -28,7 +28,19 @@ const router = createRouter ({
             name: "notfound",
             component: NotFound,
         },
-    ]
+    ],
+    // scrollBehavior(to, from, savedPosition) {
+    //     return { x: 0, y: 0 }
+    // }
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition;
+        } else {
+            return {
+                top: 0
+            };
+        }
+    }
 })
 
 export { router }
